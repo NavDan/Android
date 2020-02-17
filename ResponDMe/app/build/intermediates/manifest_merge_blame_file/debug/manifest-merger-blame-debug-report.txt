@@ -1,0 +1,89 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.respondme"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:8:5-32:19
+15        android:allowBackup="true"
+15-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+23-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:14:9-65
+24        <activity android:name="com.example.respondme.AddAmigo" />
+24-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:15:9-55
+24-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:15:19-43
+25        <activity android:name="com.example.respondme.resultados" />
+25-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:16:9-48
+25-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:16:19-45
+26        <activity android:name="com.example.respondme.crearpregunta" />
+26-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:17:9-51
+26-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:17:19-48
+27        <activity android:name="com.example.respondme.Partida" />
+27-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:18:9-45
+27-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:18:19-42
+28        <activity
+28-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:19:9-21:67
+29            android:name="com.example.respondme.menuactivity"
+29-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:20:13-41
+30            android:label="@string/title_activity_menuactivity" />
+30-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:21:13-64
+31        <activity
+31-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:22:9-24:40
+32            android:name="com.example.respondme.registroactivity"
+32-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:23:13-45
+33            android:label="Registro" />
+33-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:24:13-37
+34        <activity android:name="com.example.respondme.MainActivity" >
+34-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:25:9-31:20
+34-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:25:19-47
+35            <intent-filter>
+35-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:26:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:27:17-69
+36-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:27:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:29:17-77
+38-->D:\ProyectoAndroidGit\ResponDMe\app\src\main\AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <provider
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+43            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+44            android:authorities="com.example.respondme.lifecycle-process"
+44-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+45            android:exported="false"
+45-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+46            android:multiprocess="true" />
+46-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dnlna\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+47    </application>
+48
+49</manifest>
