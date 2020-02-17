@@ -8,6 +8,22 @@
     tools:context=".resultados">
 
     <Button
+        android:id="@+id/btnresultadosnuevaronda"
+        android:layout_width="278dp"
+        android:layout_height="86dp"
+        android:background="#e2a80e"
+        android:text="Siguiente Ronda"
+        android:textColor="#0080ff"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
         android:id="@+id/btnresultadosvolver"
         android:layout_width="278dp"
         android:layout_height="86dp"
@@ -23,7 +39,7 @@
         app:layout_constraintVertical_bias="0.939" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/resultadoscont"
         android:layout_width="213dp"
         android:layout_height="213dp"
         android:gravity="center"
@@ -38,7 +54,7 @@
         app:layout_constraintVertical_bias="0.567" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/resultadosmis"
         android:layout_width="213dp"
         android:layout_height="137dp"
         android:gravity="center"
@@ -53,7 +69,7 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/resultadores"
         android:layout_width="366dp"
         android:layout_height="54dp"
         android:gravity="center"
@@ -69,7 +85,7 @@
         app:layout_constraintVertical_bias="0.778" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/resultadosganarperder"
         android:layout_width="323dp"
         android:layout_height="59dp"
         android:gravity="center_horizontal"

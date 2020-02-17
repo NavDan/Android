@@ -36,9 +36,7 @@ public class Partida extends AppCompatActivity implements View.OnClickListener{
         btn2 = findViewById(R.id.btnpartida2);
         btn3 = findViewById(R.id.btnpartida3);
 
-        btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
-        btn3.setOnClickListener(this);
+
 
         pregunta = findViewById(R.id.lblpartidapregunta);
         ronda = findViewById(R.id.lblpartidaronda);
@@ -46,6 +44,10 @@ public class Partida extends AppCompatActivity implements View.OnClickListener{
         contra = findViewById(R.id.lblpartidaacertada2);
 
         loadJson();
+
+        btn1.setOnClickListener(this);
+        btn2.setOnClickListener(this);
+        btn3.setOnClickListener(this);
 
     }
 
@@ -80,24 +82,17 @@ public class Partida extends AppCompatActivity implements View.OnClickListener{
                                     resp = juego.getResC3();
                                 }
                             }
-
+                            Intent intent = new Intent(Partida.this, resultados.class);
+                            intent.putExtra("Usuario1",juego.getUsuario1());
+                            intent.putExtra("Usuario2",juego.getUsuario2());
+                            intent.putExtra("ronda",rond+"");
                             if(respu.equals(resp)){
-                                Intent intent = new Intent(Partida.this, resultados.class);
-                                intent.putExtra("Usuario1",juego.getUsuario1());
-                                intent.putExtra("Usuario2",juego.getUsuario1());
-                                intent.putExtra("ronda",rond);
-                                intent.putExtra("respuesta",1);
-                                startActivity(intent);
-                                finish();
+                                intent.putExtra("respuesta","1");
                             }else{
-                                Intent intent = new Intent(Partida.this, resultados.class);
-                                intent.putExtra("Usuario1",juego.getUsuario1());
-                                intent.putExtra("Usuario2",juego.getUsuario1());
-                                intent.putExtra("ronda",rond);
-                                intent.putExtra("respuesta",0);
-                                startActivity(intent);
-                                finish();
+                                intent.putExtra("respuesta","0");
                             }
+                            startActivity(intent);
+                            finish();
                         } else if (data.getEstado()==1){
                             // no insert
                             Toast.makeText(getApplicationContext(),"__error__", Toast.LENGTH_SHORT).show();
@@ -111,10 +106,6 @@ public class Partida extends AppCompatActivity implements View.OnClickListener{
                 Toast.makeText(getApplicationContext(),"No funciona",Toast.LENGTH_SHORT).show();
             }
         });
-
-        Intent inte = new Intent(this, resultados.class);
-        startActivity(inte);
-        finish();
 
     }
 

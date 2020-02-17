@@ -82,4 +82,11 @@ public interface Apiservice {
             @Query("usu") String usu
     );
 
+    @GET("nuevaronda.php")
+    Call<Juego> newrond(
+            @Query("idu1") String id1,
+            @Query("idu2") String id2,
+            @Query("ronda") String ronda
+    );
+
 }

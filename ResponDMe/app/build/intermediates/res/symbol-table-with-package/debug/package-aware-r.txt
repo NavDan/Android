@@ -1107,6 +1107,7 @@ id btnpartida1
 id btnpartida2
 id btnpartida3
 id btnregistromain
+id btnresultadosnuevaronda
 id btnresultadosvolver
 id btnvolver
 id buttonPanel
@@ -1218,6 +1219,10 @@ id registronom
 id registropass
 id registrorpass
 id registrouser
+id resultadores
+id resultadoscont
+id resultadosganarperder
+id resultadosmis
 id right
 id right_icon
 id right_side
@@ -1287,10 +1292,6 @@ id textView18
 id textView19
 id textView2
 id textView20
-id textView21
-id textView22
-id textView23
-id textView24
 id textView3
 id textView4
 id textView5
